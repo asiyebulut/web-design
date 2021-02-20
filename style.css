@@ -70,17 +70,16 @@ nav a:hover{
 
 #newsletter h3{
     float: left;
-    width: 40%;
     margin-top: 25px;
 }
 
 #newsletter form{
     float: right;
-    width: 40%;
     margin-top: 25px;
 }
-input{
-    padding: 5px 10px;
+#newsletter input{
+    padding: 0 10px;
+    height: 25px;
 }
 
 #newsletter a{
@@ -91,3 +90,109 @@ input{
     font-size: 15px;
 }
 
+
+.column{
+    float: left;
+    width: 30%;
+    margin: 3% 1.5%;
+    text-align: center;
+}
+
+.column img{
+    height: 120px;
+}
+
+footer{
+    text-align: center;
+    background-color: tomato;
+    padding: 30px;
+    color: white;
+}
+
+/* about me*/
+
+.left{
+    float: left;
+    width: 60%;
+    
+}
+.right{
+    float: right;
+    width: 35%;
+    background-color: rgb(76, 87, 97);
+    color: white;
+    margin-top: 30px;
+    padding: 20px 10px;
+}
+
+#second{
+    background-color: rgb(76, 87, 97);
+    color: white;
+    padding: 10px;
+}
+
+.right input{
+    width: 90%;
+    padding: 5px;
+}
+.right a{
+    display: block;
+    width: 20%;
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px 5px 20px;
+}
+
+.block{
+    border: solid 1px lightgray;
+    background-color: #eee;
+    margin: 10px 0;
+    padding: 20px 10px;
+}
+#newsletter form{
+    border: 1px solid red;
+}
+@media (max-width:768px){
+    .container{
+        min-width: 90%;
+    }
+}
+
+@media (max-width:600px){
+    /*.container{
+        min-width: 90%;
+        margin: auto;
+    }*/
+    #showcase h1{
+        padding-top: 40px;
+    }
+    #branding h2,
+    nav ul,
+    #newsletter h3,
+    #newsletter form{
+        float: none;
+        width: 100%;
+        text-align: center;
+    } 
+    nav ul{
+        padding: 0;
+    }
+    #newsletter h3{
+        margin: 0;
+        padding-top: 20px;
+    }
+    #newsletter form{
+        border: 1px solid red;
+    }
+    #newsletter input[type="email"]{
+        width: 100%;
+    }
+    #newsletter a{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+
+}
