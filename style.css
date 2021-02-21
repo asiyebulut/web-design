@@ -73,13 +73,14 @@ nav a:hover{
     margin-top: 25px;
 }
 
-#newsletter form{
+#newsletter .form{
     float: right;
     margin-top: 25px;
 }
 #newsletter input{
-    padding: 0 10px;
+    padding: 0 5px;
     height: 25px;
+    
 }
 
 #newsletter a{
@@ -113,8 +114,7 @@ footer{
 
 .left{
     float: left;
-    width: 60%;
-    
+    width: 55%;
 }
 .right{
     float: right;
@@ -150,27 +150,24 @@ footer{
     margin: 10px 0;
     padding: 20px 10px;
 }
-#newsletter form{
-    border: 1px solid red;
-}
+
 @media (max-width:768px){
     .container{
         min-width: 90%;
     }
 }
 
+
 @media (max-width:600px){
-    /*.container{
-        min-width: 90%;
-        margin: auto;
-    }*/
     #showcase h1{
         padding-top: 40px;
     }
     #branding h2,
     nav ul,
     #newsletter h3,
-    #newsletter form{
+    #newsletter .form,
+    #future .column,
+    .left, .right{
         float: none;
         width: 100%;
         text-align: center;
@@ -178,21 +175,29 @@ footer{
     nav ul{
         padding: 0;
     }
+    #newsletter{
+        padding-bottom: 15px;
+    }
     #newsletter h3{
         margin: 0;
         padding-top: 20px;
     }
-    #newsletter form{
-        border: 1px solid red;
-    }
-    #newsletter input[type="email"]{
-        width: 100%;
+    
+    #newsletter .form input[type="email"]{
+        width: 80%;
+        margin-bottom: 5px;
     }
     #newsletter a{
         display: block;
-        width: 100%;
-        margin-bottom: 15px;
     }
     
+    .right{
+        padding: 20px 0;
+        margin: 10px 0;
+    }
 
+    .right a{
+       width: 80%;
+       margin-left: 17px;
+    }
 }
